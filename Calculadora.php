@@ -21,7 +21,12 @@ class Calculadora
 
 	public function division($a,$b)
 	{
-		return $a/$b;
+		if ($b <> 0){
+			return $a/$b;
+		}else{
+			echo "No se puede dividir por cero, ingrese otro valor";
+			return 0;
+		}
 	}
 }
 
