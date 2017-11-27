@@ -17,6 +17,12 @@ final class CalculadoraTest extends TestCase
     	$array = new CA();
         $this->assertArrayHasKey('foo', $array->cargarArray(['foo' => 'baz']));
     }
+
+    public function testDivision()
+    {
+    	$div = new CA();
+        $this->assertEquals(true, is_numeric($div->division(8,0)));
+    }
 }
 
 ?>

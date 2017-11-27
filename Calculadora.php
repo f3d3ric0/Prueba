@@ -19,6 +19,10 @@ class Calculadora
 		return $array;
 	}
 
+	public function division($a,$b)
+	{
+		return $a/$b;
+	}
 }
 
 
